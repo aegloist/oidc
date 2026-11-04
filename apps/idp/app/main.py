@@ -4,7 +4,7 @@ from fastapi import FastAPI, Request, Response
 from fastapi.responses import HTMLResponse
 from starlette.middleware.base import RequestResponseEndpoint
 
-app = FastAPI(title="Latch OIDC")
+app = FastAPI(title="OIDC from Scratch")
 logger = logging.getLogger("uvicorn.error")
 
 
@@ -29,7 +29,7 @@ async def home() -> str:
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Latch OIDC</title>
+    <title>OIDC from Scratch</title>
   </head>
   <body>
     <main>

@@ -1,7 +1,7 @@
 [project]
-name = "latch-idp"
+name = "oidc-idp"
 version = "0.1.0"
-description = "OpenID Connect identity provider built with FastAPI"
+description = "OpenID Connect identity provider built from scratch with Python and FastAPI"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "fastapi>=0.162.0",

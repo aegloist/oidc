@@ -1,8 +1,8 @@
-# Latch OIDC
+# OIDC from Scratch
 
-An OpenID Connect identity provider built with Python and FastAPI, with TypeScript/Next.js client apps planned to demonstrate single sign-on.
+Building an OpenID Connect identity provider from scratch with Python and FastAPI, then connecting TypeScript/Next.js apps to it for single sign-on.
 
-I’m building Latch to understand the parts of authentication that an SDK usually handles: browser redirects, sessions, authorization codes, token validation, and revocation. The provider will implement the protocol flow directly and use established libraries for cryptography and password hashing.
+I’m building this provider to understand the parts of authentication that an SDK usually handles: browser redirects, sessions, authorization codes, token validation, and revocation. The provider will implement the protocol flow directly and use established libraries for cryptography and password hashing.
 
 ## Status
 
@@ -22,8 +22,8 @@ Next: registration, password hashing, and database-backed sessions. After that: 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and Python 3.12, then:
 
 ```sh
-git clone https://github.com/aegloist/latch-oidc.git
-cd latch-oidc/apps/idp
+git clone https://github.com/aegloist/oidc-from-scratch.git
+cd oidc-from-scratch/apps/idp
 uv sync --locked
 uv run uvicorn app.main:app --reload --host 127.0.0.1 --port 4000 --no-access-log
 ```
@@ -57,6 +57,6 @@ The backend uses Python 3.12, FastAPI, and Uvicorn. uv manages the environment; 
 
 ## Reference
 
-Inspired by [Atharv Dange’s Kleis OIDC](https://github.com/atharvdange618/OIDC). Latch follows the same project idea with a Python provider implementation. Protocol work will follow [OIDC Core](https://openid.net/specs/openid-connect-core-1_0.html) and [OAuth security best practices](https://www.rfc-editor.org/rfc/rfc9700.html).
+Inspired by [Atharv Dange’s Kleis OIDC](https://github.com/atharvdange618/OIDC). This project follows the same project idea with a Python provider implementation. Protocol work will follow [OIDC Core](https://openid.net/specs/openid-connect-core-1_0.html) and [OAuth security best practices](https://www.rfc-editor.org/rfc/rfc9700.html).
 
 This project is under development and is not ready to manage production identities.
