@@ -1,4 +1,4 @@
-# OIDC from Scratch
+# OIDC
 
 Building an OpenID Connect identity provider from scratch with Python and FastAPI, then connecting TypeScript/Next.js apps to it for single sign-on.
 
@@ -22,8 +22,8 @@ Next: registration, password hashing, and database-backed sessions. After that: 
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and Python 3.12, then:
 
 ```sh
-git clone https://github.com/aegloist/oidc-from-scratch.git
-cd oidc-from-scratch/apps/idp
+git clone https://github.com/aegloist/oidc.git
+cd oidc/apps/idp
 uv sync --locked
 uv run uvicorn app.main:app --reload --host 127.0.0.1 --port 4000 --no-access-log
 ```
