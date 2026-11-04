@@ -1,0 +1,24 @@
+[project]
+name = "latch-idp"
+version = "0.1.0"
+description = "OpenID Connect identity provider built with FastAPI"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi>=0.162.0",
+    "uvicorn>=0.54.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.mypy]
+files = ["app", "tests"]
+strict = true
+
+[dependency-groups]
+dev = [
+    "httpx2>=2.16.0",
+    "mypy>=2.4.1",
+    "pytest>=9.2.0",
+]
